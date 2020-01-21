@@ -1,0 +1,3 @@
+#!/bin/bash
+
+mkdir -p /var/opt/cimitra/scripts ; cd /var/opt/cimitra/scripts ; curl -LJO https://github.com/cimitrasoftware/groupwise/archive/master.zip -o ./ ; unzip -o ./groupwise-master.zip ; cd ./groupwise-master ; unzip -o gw_cimitra_scripts.zip ; cd /var/opt/cimitra/scripts/groupwise-master ; ls -l ; cat ./README.md ; echo "" ;./gw_system_list_users.sh ; echo ""
