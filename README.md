@@ -20,8 +20,11 @@ CONFIGURE GWADMIN-SERVICE LOCATION AND CREDENTIALS
 Edit the settings_gw.cfg file and make sure GW_ADMIN* variables are properly configured. Similar to this. 
 
 GW_ADMIN_SERVICE_ADDRESS="192.168.1.2"
+
 GW_ADMIN_SERVICE_PORT="9710"
+
 GW_ADMIN_USER="Cimitra"
+
 GW_ADMIN_PASSWORD="isCool"
 
 EXCLUDE GROUPS ( A really cool feature, read on my friends! )
@@ -37,8 +40,11 @@ STEP 3 MODIFY THE settings_gw.cfg FILE
 Edit the settings_gw.cfg file and define the following fields specific to the exclude group you created. If I called the GroupWise Group HELP_DESK_CANNOT_ADMINISTER then my settings_gw.cfg file would look something like this: 
 
 GW_EXCLUDE_GROUP_ENABLED="1"
+
 GW_EXCLUDE_GROUP_NAME="HELP_DESK_CANNOT_ADMINISTER"
+
 GW_EXCLUDE_GROUP_POST_OFFICE_NAME="PO1"
+
 GW_EXCLUDE_GROUP_DOMAIN_NAME="DOMAIN1"
 
 USER QUICKFINDER INDEX REBUILD SCRIPT
