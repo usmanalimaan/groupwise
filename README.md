@@ -35,7 +35,7 @@ GW_ADMIN_USER="Cimitra"
 
 GW_ADMIN_PASSWORD="isCool"
 
-**A** EXCLUDE GROUPS ( A really cool feature, read on my friends! )
+**EXCLUDE GROUPS** ( A really cool feature, read on my friends! )
 All scripts that modify or read user objects have a built in "exclude" function. Namely, you can make it so that certain users are excluded from being affected or viewed with these scripts. You can either user the exclude_gw.cfg file or an "exclude group" in GroupWise. 
 
 STEP **1.** TO MAKE AND "EXCLUDE GROUP"
@@ -57,3 +57,7 @@ GW_EXCLUDE_GROUP_DOMAIN_NAME="DOMAIN1"
 
 USER QUICKFINDER INDEX REBUILD SCRIPT
 One of the scripts, gw_user_quickfinder.sh can rebuild a user's QuickFinder index files. This script needs information about the POA's HTTP console. Run the script with the appropriate input information and it will make additional changes to the settings_gw.cfg file for you to configure. 
+
+Enjoy
+Tay Kratzer
+tay@cimitra.com
