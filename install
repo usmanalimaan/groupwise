@@ -1,0 +1,106 @@
+#!/bin/bash
+# Install/Update Script for GroupWise Admin Helpdesk Scripts by Cimitra
+# Author: Tay Kratzer tay@cimitra.com
+# GitHub Location: https://github.com/cimitrasoftware/groupwise
+
+declare SOFTWARE_TITLE="GroupWise Admin Helpdesk Scripts by Cimitra"
+declare DEFAULT_INSTALL_PATH="/var/opt/cimitra/scripts"
+declare INSTALL_PATH="/var/opt/cimitra/scripts"
+declare -i SKIP_HELP=0
+declare -i INSTALL_PATH_OVERRIDE_SET=0
+declare INSTALL_PATH_OVERRIDE=""
+
+declare -i INSTALL_MODE=`echo "$0" | grep -c install`
+
+if [ $INSTALL_MODE -eq 0 ]
+then
+INSTALL_PATH_OVERRIDE_SET=1
+CURRENT_DIR=`pwd`
+PARENT_DIR="$(dirname "${CURRENT_DIR}")"
+INSTALL_PATH="${PARENT_DIR}"
+fi
+
+function SHOW_UPGRADE_HELP()
+{
+SKIP_HELP=1
+echo ""
+echo "Upgrade ${SOFTWARE_TITLE} | y/n"
+echo ""
+read theResponse
+
+if [ $theResponse = 'y' ]
+then
+echo ""
+echo "Upgrading ${SOFTWARE_TITLE} . . ."
+echo ""
+return
+else
+exit 0
+fi
+}
+
+function SHOW_INSTALL_HELP()
+{
+echo "Installation Instructions"
+echo ""
+echo "$0 | This will install the GroupWise Admin Helpdesk Scripts by Cimitra to ${DEFAULT_INSTALL_PATH}"
+echo ""
+echo "Alternative Installation"
+echo ""
+echo "$0 <some path> | This will install the GroupWise Admin Helpdesk Scripts by Cimitra to <some path>"
+echo ""
+}
+
+
+if [ $SKIP_HELP -eq 0 ]
+then
+
+	if [ $1 = 'help' ] 2> /dev/null || [ $1 = '--help' ] 2> /dev/null || [ $1 = '--h' ] 2> /dev/null || [ $1 = '-help' ] 2> /dev/null || [ $1 = '-h' ] 2> /dev/null
+	then
+		if [ $INSTALL_MODE -eq 1 ]
+		then
+		SHOW_INSTALL_HELP
+		exit 0
+		else
+		SHOW_UPGRADE_HELP
+		fi
+
+	fi
+
+fi
+
+
+if [ $INSTALL_PATH_OVERRIDE_SET -eq 0 ]
+then
+
+	declare -i INSTALL_PATH_SET=`echo "$1" | wc -c`
+
+	if [ $INSTALL_PATH_SET -gt 1 ]
+	then
+
+	INSTALL_PATH_IN=$1
+
+	declare -i INSTALL_PATH_IN_EXISTS=`ls ${INSTALL_PATH_IN} 2> /dev/null 1> /dev/null && echo "0" || echo "1"`
+
+		if [ $INSTALL_PATH_IN_EXISTS -ne 0 ]
+		then
+		echo ""
+		echo "Error: Install Path: ${INSTALL_PATH_IN} Does Not Exist"
+		echo ""
+		exit 1
+		else
+		echo ""
+		echo "Installing ${SOFTWARE_TITLE} to Install Path: ${INSTALL_PATH_IN}"
+		echo ""
+		INSTALL_PATH="${INSTALL_PATH_IN}"
+		fi
+
+	fi
+
+fi
+
+rm ./groupwise-master.zip 2> /dev/null
+
+rm ${INSTALL_PATH}/groupwise-master.zip 2> /dev/null
+
+mkdir -p ${INSTALL_PATH} 2> /dev/null ; cd ${INSTALL_PATH} 2> /dev/null && curl -LJO https://github.com/cimitrasoftware/groupwise/archive/master.zip -o ./ && unzip -o ./groupwise-master.zip && cd ${INSTALL_PATH}/groupwise-master && unzip -o gw_cimitra_scripts.zip && cd ${INSTALL_PATH}/groupwise-master/gwadmins && ./gw_system_list_users.sh 1> /dev/null ;  cd ${INSTALL_PATH}/groupwise-master && cat ./README.md ; echo "" ; cd ${INSTALL_PATH}/groupwise-master/helpdesk && echo "...In Short..." ; ./gw_system_list_users.sh ; echo ""
