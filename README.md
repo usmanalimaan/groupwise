@@ -61,8 +61,10 @@ One of the scripts, gw_user_quickfinder.sh can rebuild a user's QuickFinder inde
 **UPGRADING/UPDATING**
 The GroupWise Admin Helpdesk Scripts by Cimitra ships with a script specifically for upgrading to the latest version of these scripts. The update script will be in the directory where you installed the software in the "groupwise-master" directory. For most isntallations this will be: **/var/opt/cimitra/scripts/groupwise-master** The script is simply called:
 
-update
+**update**
 
 Enjoy
+
 Tay Kratzer
+
 tay@cimitra.com
