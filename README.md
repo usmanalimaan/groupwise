@@ -55,8 +55,13 @@ GW_EXCLUDE_GROUP_POST_OFFICE_NAME="PO1"
 
 GW_EXCLUDE_GROUP_DOMAIN_NAME="DOMAIN1"
 
-USER QUICKFINDER INDEX REBUILD SCRIPT
+**USER QUICKFINDER INDEX REBUILD SCRIPT**
 One of the scripts, gw_user_quickfinder.sh can rebuild a user's QuickFinder index files. This script needs information about the POA's HTTP console. Run the script with the appropriate input information and it will make additional changes to the settings_gw.cfg file for you to configure. 
+
+**UPGRADING/UPDATING**
+The GroupWise Admin Helpdesk Scripts by Cimitra ships with a script specifically for upgrading to the latest version of these scripts. The update script will be in the directory where you installed the software in the "groupwise-master" directory. For most isntallations this will be: **/var/opt/cimitra/scripts/groupwise-master** The script is simply called:
+
+update
 
 Enjoy
 Tay Kratzer
