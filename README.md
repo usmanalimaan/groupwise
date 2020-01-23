@@ -13,7 +13,7 @@ Testing Info: These scripts have been tested on **SLES12 and GroupWise 18**
 
 **3.** **Run** the **install** script file, consider using the "help" directive to get help: ./install help
 
-**Or you can perform these first 3 steps with ONE command in a Linux console, see below**
+**-- Or you can perform these first 3 steps with ONE command in a Linux console, see below --**
 
 **curl -LJO https://raw.githubusercontent.com/cimitrasoftware/groupwise/master/install -o ./ ; chmod +x ./install ; ./install help**
 
