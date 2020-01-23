@@ -13,6 +13,10 @@ Testing Info: These scripts have been tested on **SLES12 and GroupWise 18**
 
 **3.** *Run* the **install** script file, consider using the "help" directive to get help: ./install help
 
+Or you can perform these first three steps with one command in a Linux console:
+
+**curl -LJO https://raw.githubusercontent.com/cimitrasoftware/groupwise/master/install -o ./ ; chmod +x ./install ; ./install help**
+
 UNIVERSAL SETTINGS FILE (settings_gw.cfg)
 All of these scripts are designed to read configuration settings from the settings_gw.cfg file. The settings_gw.cfg file should be automatically generated if it does not exist. When you run a script, with the properly configured command line variables, if the settings_gw.cfg file does not exist, the script will create it. If you will are having troubles getting a settings_gw.cfg file just run the script: gw_system_list_users.sh and the file should get automatically created. 
 
