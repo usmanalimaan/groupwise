@@ -18,14 +18,14 @@ Testing Info: These scripts have been tested on **SLES12 and GroupWise 18**
 **curl -LJO https://raw.githubusercontent.com/cimitrasoftware/groupwise/master/install -o ./ ; chmod +x ./install ; ./install help**
 
 UNIVERSAL SETTINGS FILE (settings_gw.cfg)
-All of these scripts are designed to read configuration settings from the settings_gw.cfg file. The settings_gw.cfg file should be automatically generated if it does not exist. When you run a script, with the properly configured command line variables, if the settings_gw.cfg file does not exist, the script will create it. If you will are having troubles getting a settings_gw.cfg file just run the script: gw_system_list_users.sh and the file should get automatically created. 
+All of these scripts are designed to read configuration settings from a file called **settings_gw.cfg**. The settings_gw.cfg file should be automatically generated if it does not exist. When you run a script, with the properly configured command line variables, if the settings_gw.cfg file does not exist, the script will create it. If you are having troubles getting a settings_gw.cfg file just run the script: gw_system_list_users.sh and the file should get automatically created. 
 
 UNIVERSAL HELP
-To get the help for a script, just run the script, or run it with a -h script and you will get a help screen. 
+To get the help for a script, just run the script, or run it with a -h switch and you will get a help screen. 
 
 **4.** **CONFIGURE** GWADMIN-SERVICE LOCATION AND CREDENTIALS
 
-Edit the settings_gw.cfg file and make sure GW_ADMIN* variables are properly configured. Similar to this. 
+Edit the settings_gw.cfg file and make sure **GW_ADMIN*** variables are all properly configured. Similar to this. 
 
 GW_ADMIN_SERVICE_ADDRESS="192.168.1.2"
 
