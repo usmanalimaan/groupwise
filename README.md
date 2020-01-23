@@ -3,14 +3,15 @@ GroupWise Admin Helpdesk Scripts by Cimitra
 Version: 1.4
 Author: Tay Kratzer tay@cimitra.com
 License: Free for whatever you would like!
+Testing Info: These scripts have been tested on **SLES12 and GroupWise 18**
 
 **Installation is just 4 easy steps!**
 
 **1** *Download* the GroupWise Admin Helpdesk Scripts by Cimitra **install** script file to a GroupWise server on Linux
 
-**2** *Change* the **install** script file executable on the Linux box:        chmod +x ./install
+**2** *Change* the **install** script file to be *executable* on the Linux box: chmod +x ./install
 
-**3** *Run* the **install** script file, use the "help" directive to get help:          ./install help
+**3** *Run* the **install** script file, consider using the "help" directive to get help: ./install help
 
 UNIVERSAL SETTINGS FILE (settings_gw.cfg)
 All of these scripts are designed to read configuration settings from the settings_gw.cfg file. The settings_gw.cfg file should be automatically generated if it does not exist. When you run a script, with the properly configured command line variables, if the settings_gw.cfg file does not exist, the script will create it. If you will are having troubles getting a settings_gw.cfg file just run the script: gw_system_list_users.sh and the file should get automatically created. 
