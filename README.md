@@ -7,11 +7,11 @@ Testing Info: These scripts have been tested on **SLES12 and GroupWise 18**
 
 **Installation is just 4 easy steps!**
 
-**1** *Download* the GroupWise Admin Helpdesk Scripts by Cimitra **install** script file to a GroupWise server on Linux
+**1.** *Download* the GroupWise Admin Helpdesk Scripts by Cimitra **install** script file to a GroupWise server on Linux
 
-**2** *Change* the **install** script file to be *executable* on the Linux box: chmod +x ./install
+**2.** *Change* the **install** script file to be *executable* on the Linux box: chmod +x ./install
 
-**3** *Run* the **install** script file, consider using the "help" directive to get help: ./install help
+**3.** *Run* the **install** script file, consider using the "help" directive to get help: ./install help
 
 UNIVERSAL SETTINGS FILE (settings_gw.cfg)
 All of these scripts are designed to read configuration settings from the settings_gw.cfg file. The settings_gw.cfg file should be automatically generated if it does not exist. When you run a script, with the properly configured command line variables, if the settings_gw.cfg file does not exist, the script will create it. If you will are having troubles getting a settings_gw.cfg file just run the script: gw_system_list_users.sh and the file should get automatically created. 
@@ -19,7 +19,7 @@ All of these scripts are designed to read configuration settings from the settin
 UNIVERSAL HELP
 To get the help for a script, just run the script, or run it with a -h script and you will get a help screen. 
 
-**4** *CONFIGURE* GWADMIN-SERVICE LOCATION AND CREDENTIALS
+**4.** *CONFIGURE* GWADMIN-SERVICE LOCATION AND CREDENTIALS
 
 Edit the settings_gw.cfg file and make sure GW_ADMIN* variables are properly configured. Similar to this. 
 
@@ -34,13 +34,13 @@ GW_ADMIN_PASSWORD="isCool"
 **A** EXCLUDE GROUPS ( A really cool feature, read on my friends! )
 All scripts that modify or read user objects have a built in "exclude" function. Namely, you can make it so that certain users are excluded from being affected or viewed with these scripts. You can either user the exclude_gw.cfg file or an "exclude group" in GroupWise. 
 
-STEP **1** TO MAKE AND "EXCLUDE GROUP"
+STEP **1.** TO MAKE AND "EXCLUDE GROUP"
 Make a new group in GroupWise, give it a name of your choosing.
 
-STEP **2** ADD USERS TO THE "EXCLUDE GROUP"
+STEP **2.** ADD USERS TO THE "EXCLUDE GROUP"
 Add users to that group that you do not want the scripts to be able to modify or view etc. So for example, if you were to share these scripts with Help Desk personnel via Cimitra, but you wanted to make sure that the Help Desk personnel couldn't modify your account, and other admins etc. then you would add yourself and others to that the group you made for handling exclusions. 
 
-STEP **3** MODIFY THE settings_gw.cfg FILE
+STEP **3.** MODIFY THE settings_gw.cfg FILE
 Edit the settings_gw.cfg file and define the following fields specific to the exclude group you created. If I called the GroupWise Group HELP_DESK_CANNOT_ADMINISTER then my settings_gw.cfg file would look something like this: 
 
 GW_EXCLUDE_GROUP_ENABLED="1"
