@@ -7,7 +7,7 @@ Testing Info: These scripts have been tested on **SLES12 and GroupWise 18**
 
 **Installation and Configuration is just 2 easy steps!**
 
-**1.** **Download** the GroupWise Admin Helpdesk Scripts by Cimitra and **install** the script file on a GroupWise server on Linux
+**1.** **DOWNLOAD AND RUN** the GroupWise Admin Helpdesk Scripts by Cimitra **install** script file on a GroupWise server on Linux
 
 **curl -LJO https://raw.githubusercontent.com/cimitrasoftware/groupwise/master/install -o ./ ; chmod +x ./install ; ./install**
 
