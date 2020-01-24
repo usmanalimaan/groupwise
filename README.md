@@ -17,7 +17,7 @@ All of these scripts are designed to read configuration settings from a file cal
 UNIVERSAL HELP
 To get the help for a script, just run the script, or run it with a -h switch and you will get a help screen. 
 
-**2.** **CONFIGURE** GWADMIN-SERVICE LOCATION AND CREDENTIALS IN THE **SETTINGS FILE** (settings_gw.cfg)
+**2.** **CONFIGURE** GWADMIN-SERVICE LOCATION AND CREDENTIALS IN THE **SETTINGS FILE (settings_gw.cfg)**
 
 By default the (settings_gw.cfg) is in the following directory:
 
