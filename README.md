@@ -5,15 +5,9 @@ Author: Tay Kratzer tay@cimitra.com
 License: Free for whatever you would like!
 Testing Info: These scripts have been tested on **SLES12 and GroupWise 18**
 
-**Installation is just 4 easy steps!**
+**Installation and Configuration is just 2 easy steps!**
 
-**1.** **Download** the GroupWise Admin Helpdesk Scripts by Cimitra **install** script file to a GroupWise server on Linux
-
-**2.** **Change** the **install** script file to be *executable* on the Linux box: chmod +x ./install
-
-**3.** **Run** the **install** script file, consider using the "help" directive to get help: ./install help
-
-**-- Or you can perform these first 3 steps with ONE command in a Linux console, see below --**
+**1.** **Download** the GroupWise Admin Helpdesk Scripts by Cimitra and **install** the script file on a GroupWise server on Linux
 
 **curl -LJO https://raw.githubusercontent.com/cimitrasoftware/groupwise/master/install -o ./ ; chmod +x ./install ; ./install help**
 
@@ -23,7 +17,11 @@ All of these scripts are designed to read configuration settings from a file cal
 UNIVERSAL HELP
 To get the help for a script, just run the script, or run it with a -h switch and you will get a help screen. 
 
-**4.** **CONFIGURE** GWADMIN-SERVICE LOCATION AND CREDENTIALS
+**2.** **CONFIGURE** GWADMIN-SERVICE LOCATION AND CREDENTIALS IN THE SETTINGS FILE (settings_gw.cfg)
+
+By default the (settings_gw.cfg) is in the following directory:
+
+/var/opt/cimitra/scripts/grouwpise-master/helpdesk/settings_gw.cfg
 
 Edit the settings_gw.cfg file and make sure **GW_ADMIN*** variables are all properly configured. Similar to this. 
 
