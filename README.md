@@ -1,8 +1,11 @@
-# GroupWise Scripts
 GroupWise Admin Helpdesk Scripts by Cimitra
+
 Version: 1.4
+
 Author: Tay Kratzer tay@cimitra.com
+
 License: Free for whatever you would like!
+
 Testing Info: These scripts have been tested on **SLES12 and GroupWise 18**
 
 **Installation and Configuration is just 2 easy steps!**
