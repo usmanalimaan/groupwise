@@ -3,6 +3,8 @@ Version: 1.4
 
 Author: Tay Kratzer tay@cimitra.com
 
+Special thanks to Eliot Lloyd Lanes and Viable Solutions Inc. for creating a GroupWise system where we I would create these scripts. ​
+
 Testing Info: These scripts have been tested on **SLES12 and GroupWise 18**
 
 **Installation and Configuration is just 2 easy steps!**
