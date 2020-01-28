@@ -7,6 +7,8 @@ Special thanks to Eliot Lloyd Lanes and Viable Solutions Inc. for hosting the Gr
 
 Testing Info: These scripts have been tested on **SLES12 and GroupWise 18**
 
+Documentation and introduction at https://cimitra.com/gw
+
 **Installation and Configuration is just 2 easy steps!**
 
 **1.** **DOWNLOAD AND RUN** the GroupWise Admin Helpdesk Scripts by Cimitra **install** script file on a GroupWise server on Linux
