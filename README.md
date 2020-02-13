@@ -1,9 +1,14 @@
 GroupWise Admin Helpdesk Scripts by Cimitra
-Version: 1.4
+Version: 1.5
+Version Info
+*
+1.4 - Original Ship
+1.5 - Added 4 scripts for eDirectory and GroupWise Integration
+*
 
 Author: Tay Kratzer tay@cimitra.com
 
-Special thanks to Eliot Lloyd Lanes and Viable Solutions Inc. for hosting the GroupWise system where we I created these scripts. ​
+Special thanks to Eliot Lloyd Lanes and Viable Solutions Inc. for hosting the GroupWise and eDirectory systems where we I created these scripts. ​
 
 Testing Info: These scripts have been tested on **SLES12 and GroupWise 18**
 
@@ -59,6 +64,11 @@ GW_EXCLUDE_GROUP_DOMAIN_NAME="DOMAIN1"
 
 **USER QUICKFINDER INDEX REBUILD SCRIPT**
 One of the scripts, gw_user_quickfinder.sh can rebuild a user's QuickFinder index files. This script needs information about the POA's HTTP console. Run the script with the appropriate input information and it will make additional changes to the settings_gw.cfg file for you to configure. 
+
+**EDIRECTORY INTEGRATION**
+For scenarios in which editing of a user's First Name, Last Name, and Phone Nubmer are only available via eDirectory integration through tools such as iManager, there are 4 script files that allow for this scenario. They are the scripts with the naming convention of gw_edir_<script purpose descriptive name>. These scripts require that the settings_gw.cfg file include information needed to talk to eDirectory via LDAP calls. The settings are: 
+  
+GW_EDIR_ADMIN_USER, GW_EDIR_ADMIN_PASSWORD, GW_EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_ADDRESS, GW_EDIR_LDAP_SERVICE_SIMPLE_AUTHENTICATION_PORT
 
 **UPGRADING/UPDATING**
 The GroupWise Admin Helpdesk Scripts by Cimitra ships with a script specifically for upgrading to the latest version of these scripts. The update script will be in the directory where you installed the software in the "groupwise-master" directory. For most installations this will be: **/var/opt/cimitra/scripts/groupwise-master** 
