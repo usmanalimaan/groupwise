@@ -1,9 +1,13 @@
 GroupWise Admin Helpdesk Scripts by Cimitra
 Version: 1.5
 Version Info
+
 *
+
 1.4 - Original Ship
+
 1.5 - Added 4 scripts for eDirectory and GroupWise Integration
+
 *
 
 Author: Tay Kratzer tay@cimitra.com
