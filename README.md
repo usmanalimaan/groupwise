@@ -1,16 +1,6 @@
 GroupWise Admin Helpdesk Scripts by Cimitra
 Version: 1.5
 
-Version Info
-
-*
-
-1.4 - Original Ship
-
-1.5 - Added 4 scripts for eDirectory and GroupWise Integration
-
-*
-
 Author: Tay Kratzer tay@cimitra.com
 
 Special thanks to Eliot Lloyd Lanes and Viable Solutions Inc. for hosting the GroupWise and eDirectory systems where we I created these scripts. ​
@@ -36,16 +26,6 @@ To get the help for a script, just run the script, or run it with a -h switch an
 By default the (settings_gw.cfg) is in the following directory:
 
 **/var/opt/cimitra/scripts/grouwpise-master/helpdesk/settings_gw.cfg**
-
-Edit the settings_gw.cfg file and make sure **GW_ADMIN*** variables are all properly configured. Similar to this. 
-
-GW_ADMIN_SERVICE_ADDRESS="192.168.1.2"
-
-GW_ADMIN_SERVICE_PORT="9710"
-
-GW_ADMIN_USER="Cimitra"
-
-GW_ADMIN_PASSWORD="isCool"
 
 **EXCLUDE GROUPS** ( A really cool feature, read on my friends! )
 All scripts that modify or read user objects have a built in "exclude" function. Namely, you can make it so that certain users are excluded from being affected or viewed with these scripts. You can either user the exclude_gw.cfg file or an "exclude group" in GroupWise. 
