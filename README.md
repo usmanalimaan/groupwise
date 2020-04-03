@@ -15,15 +15,9 @@ Documentation and introduction at https://cimitra.com/gw
 
 **curl -LJO https://raw.githubusercontent.com/cimitrasoftware/groupwise/master/install -o ./ ; chmod +x ./install ; ./install**
 
-UNIVERSAL SETTINGS FILE (settings_gw.cfg)
-All of these scripts are designed to read configuration settings from a file called **settings_gw.cfg**. The settings_gw.cfg file should be automatically generated if it does not exist. When you run a script, with the properly configured command line variables, if the settings_gw.cfg file does not exist, the script will create it. If you are having troubles getting a settings_gw.cfg file just run the script: gw_system_list_users.sh and the file should get automatically created. 
+**2.** **CONFIGURE** EXCLUDE_GROUP in the **THE SETTINGS FILE (settings_gw.cfg)**
 
-UNIVERSAL HELP
-To get the help for a script, just run the script, or run it with a -h switch and you will get a help screen. 
-
-**2.** **CONFIGURE** GWADMIN-SERVICE LOCATION AND CREDENTIALS IN **THE SETTINGS FILE (settings_gw.cfg)**
-
-By default the (settings_gw.cfg) is in the following directory:
+The (settings_gw.cfg) is in the following directory:
 
 **/var/opt/cimitra/scripts/grouwpise-master/helpdesk/settings_gw.cfg**
 
