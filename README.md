@@ -45,7 +45,7 @@ GW_EXCLUDE_GROUP_DOMAIN_NAME="DOMAIN1"
 One of the scripts, gw_user_quickfinder.sh can rebuild a user's QuickFinder index files. This script needs information about the POA's HTTP console. Run the script with the appropriate input information and it will make additional changes to the settings_gw.cfg file for you to configure. 
 
 **EDIRECTORY INTEGRATION**
-For scenarios in which editing of a user's First Name, Last Name, and Phone Number are only available via eDirectory integration through tools such as iManager, there are 4 script files that allow for this scenario. They are the scripts with the naming convention of gw_edir_<script purpose descriptive name>. These scripts require that the settings_gw.cfg settings below are properly configured: 
+For scenarios in which editing of a user's First Name, Last Name, and Phone Number and Password are only available via eDirectory integration through tools such as iManager, there are some scripts that require eDirectory credentials. These scripts require that the settings_gw.cfg file settings below are properly configured: 
   
 GW_EDIR_ADMIN_USER
 
