@@ -3,7 +3,7 @@ Version: 1.5
 
 Author: Tay Kratzer tay@cimitra.com
 
-Special thanks to Eliot Lloyd Lanes and Viable Solutions Inc. for hosting the GroupWise and eDirectory systems where we I created these scripts. ​
+Special thanks to Eliot Lloyd Lanes and Viable Solutions Inc. for hosting the GroupWise and eDirectory systems where we created these scripts. ​
 
 Testing Info: These scripts have been tested on **SLES12 and GroupWise 18**
 
