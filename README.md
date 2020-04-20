@@ -13,6 +13,14 @@ Documentation and introduction at https://cimitra.com/gw
 
 **1.** **DOWNLOAD AND RUN** the GroupWise Admin Helpdesk Scripts by Cimitra **install** script file on a GroupWise server on Linux
 
+**A.** **[CIMITRA SERVER AND GROUPWISE INTEGRATION INSTALLATION]**
+
+**curl -LJO https://raw.githubusercontent.com/cimitrasoftware/groupwise/master/suse_cimitra_server_install.sh -o ./ ; chmod +x ./suse_cimitra_server_install.sh ; ./suse_cimitra_server_install.sh**
+
+**-OR-**
+
+**B.** **[CIMITRA GROUPWISE INTEGRATION INSTALLATION ONLY]**
+
 **curl -LJO https://raw.githubusercontent.com/cimitrasoftware/groupwise/master/install -o ./ ; chmod +x ./install ; ./install**
 
 **2.** **CONFIGURE** EXCLUDE_GROUP in the **THE SETTINGS FILE (settings_gw.cfg)**
