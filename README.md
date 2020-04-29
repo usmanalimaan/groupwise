@@ -15,7 +15,7 @@ Documentation and introduction at https://cimitra.com/gw
 
 **A.** **[CIMITRA SERVER AND GROUPWISE INTEGRATION INSTALLATION]**
 
-**curl -LJO https://raw.githubusercontent.com/cimitrasoftware/groupwise/master/suse_cimitra_server_install.sh -o ./ ; chmod +x ./suse_cimitra_server_install.sh ; ./suse_cimitra_server_install.sh**
+**curl -LJO https://raw.githubusercontent.com/cimitrasoftware/server/master/cimitra_linux_server_install.sh -o ./ ; chmod +x ./cimitra_linux_server_install.sh ; ./cimitra_linux_server_install.sh**
 
 **-OR-**
 
