@@ -1,29 +1,26 @@
 GroupWise Admin Helpdesk Scripts by Cimitra
 Version: 1.0
+Date 6/3/2020
 
 Author: Tay Kratzer tay@cimitra.com
 
-Special thanks to Eliot Lloyd Lanes and Viable Solutions Inc. for hosting the GroupWise and eDirectory systems where we created these scripts. ​
+Special thanks to Eliot Lloyd Lanes and Viable Solutions Inc. for hosting the GroupWise and eDirectory systems where we created these scripts. 
 
 Testing Info: These scripts have been tested on **SLES12 and GroupWise 18**
 
 Documentation and introduction at https://cimitra.com/gw
 
-**Installation and Configuration is just 2 easy steps!**
+**Installation and Configuration is just 3 easy steps!**
 
-**1.** **DOWNLOAD AND RUN** the GroupWise Admin Helpdesk Scripts by Cimitra **install** script file on a GroupWise server on Linux
+**1.** **On a SUSE Box where you have installed a Cimitra Agent type in the following command**
 
-**A.** **[CIMITRA SERVER AND GROUPWISE INTEGRATION INSTALLATION]**
+**cimitra get gw**
 
-**curl -LJO https://raw.githubusercontent.com/cimitrasoftware/server/master/cimitra_server_install.sh -o ./ ; chmod +x ./cimitra_server_install.sh ; ./cimitra_server_install.sh**
+**2.** **Run the GroupWise Integration Setup Utility** 
 
-**-OR-**
+**cimitra gw**
 
-**B.** **[CIMITRA GROUPWISE INTEGRATION INSTALLATION ONLY]**
-
-**curl -LJO https://raw.githubusercontent.com/cimitrasoftware/groupwise/master/install -o ./ ; chmod +x ./install ; ./install**
-
-**2.** **CONFIGURE** EXCLUDE_GROUP in the **THE SETTINGS FILE (settings_gw.cfg)**
+**3.** **CONFIGURE** THE EXCLUDE_GROUP in the **THE SETTINGS FILE (settings_gw.cfg)**
 
 The (settings_gw.cfg) is in the following directory:
 
