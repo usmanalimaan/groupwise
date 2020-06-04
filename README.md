@@ -1,5 +1,5 @@
 GroupWise Admin Helpdesk Scripts by Cimitra
-Version: 1.5
+Version: 1.0
 
 Author: Tay Kratzer tay@cimitra.com
 
