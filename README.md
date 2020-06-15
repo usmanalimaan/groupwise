@@ -20,13 +20,14 @@ Documentation and introduction at https://cimitra.com/gw
 
 **cimitra gw**
 
-**3.** **CONFIGURE THE EXCLUDE_GROUP**
+**3.** **Configure an Exclude Group**
 
-**EXCLUDE GROUPS** ( A really cool feature, read on my friends! )
-All scripts that modify or read user objects have a built in "exclude" function. Namely, you can make it so that certain users are excluded from being affected or viewed with these scripts. 
+**Exclude Group** ( A really cool feature, read on! )
+
+All scripts that modify or read user objects have a built in "exclude" function. Namely, you can make it so that certain users are excluded from being affected or viewed with these scripts. This way if you want a user, or users that cannot be modified by GroupWise Domain and Post Office admins, you can exclude those users from being modified. 
 
 STEP **1.** TO MAKE AND "EXCLUDE GROUP"
-Make a new group in GroupWise, give it a name of your choosing.
+Make a new group in GroupWise, give it a name of your choosing. Don't have any spaces in the group name. Something like GW_CIMITRA_EXCLUDE_GROUP might be good. 
 
 STEP **2.** ADD USERS TO THE "EXCLUDE GROUP"
 Add users to that group that you do not want the scripts to be able to modify or view etc. So for example, if you were to share these scripts with Help Desk personnel via Cimitra, but you wanted to make sure that the Help Desk personnel couldn't modify your account, and other admins etc. then you would add yourself and others to that the group you made for handling exclusions. 
@@ -42,9 +43,9 @@ One of the scripts, gw_user_quickfinder.sh can rebuild a user's QuickFinder inde
 For scenarios in which editing of a user's First Name, Last Name, and Phone Number and Password are only available via eDirectory integration through tools such as iManager, there are some scripts that require eDirectory credentials. These scripts require eDirectory credentials be configured. When you run the Cimitra GroupWise Integration Setup Utility the eDirectory settings are configured under the Configure GroupWise Admin Credentials menu option.  
 
 **UPGRADING/UPDATING**
-The GroupWise Admin Helpdesk Scripts by Cimitra ships with a script specifically for upgrading to the latest version of these scripts. The update script will be in the directory where you installed the software in the "groupwise-master" directory. For most installations this will be: **/var/opt/cimitra/scripts/groupwise-master** 
+The GroupWise Admin Helpdesk Scripts by Cimitra ships with a script specifically for upgrading to the latest version of these scripts. To invoke the script isse the following: 
 
-The script is simply called: **update**
+**cimitra gw update**
 
 **Enjoy**
 
