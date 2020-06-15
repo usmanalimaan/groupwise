@@ -20,7 +20,7 @@ Documentation and introduction at https://cimitra.com/gw
 
 **cimitra gw**
 
-**3.** **CONFIGURE** THE EXCLUDE_GROUP **
+**3.** **CONFIGURE THE EXCLUDE_GROUP**
 
 **EXCLUDE GROUPS** ( A really cool feature, read on my friends! )
 All scripts that modify or read user objects have a built in "exclude" function. Namely, you can make it so that certain users are excluded from being affected or viewed with these scripts. 
