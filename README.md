@@ -27,7 +27,7 @@ Documentation and introduction at https://cimitra.com/gw
 All scripts that modify or read user objects have a built in "exclude" function. Namely, you can make it so that certain users are excluded from being affected or viewed with these scripts. This way if you want a user, or users that cannot be modified by GroupWise Domain and Post Office admins, you can exclude those users from being modified. 
 
 STEP **1.** TO MAKE AND "EXCLUDE GROUP"
-Make a new group in GroupWise, give it a name of your choosing. Don't have any spaces in the group name. Something like GW_CIMITRA_EXCLUDE_GROUP might be good. 
+Make a new group in GroupWise, give it a name of your choosing. Don't have any spaces in the group name. Something like CIMITRA_EXCLUDE might be good. 
 
 STEP **2.** ADD USERS TO THE "EXCLUDE GROUP"
 Add users to that group that you do not want the scripts to be able to modify or view etc. So for example, if you were to share these scripts with Help Desk personnel via Cimitra, but you wanted to make sure that the Help Desk personnel couldn't modify your account, and other admins etc. then you would add yourself and others to that the group you made for handling exclusions. 
