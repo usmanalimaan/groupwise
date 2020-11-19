@@ -1,5 +1,8 @@
 Latest Version Release Date: 11/19/2020
 Fixed an issue in the add eDirectory + GroupWise user script
+(gw_user_edir_create.sh)
+1. When adding a user to eDirectory, now the full name is added to the eDirectory object
+2. Added the ability to specify a tree name with this same script with a "-t" switch 
 Latest Version Release Date: 7/13/2020
 Added the ability to add an eDirectory + GroupWise user
 Latest Version Release Date: 6/29/2020
